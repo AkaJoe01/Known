@@ -12,7 +12,7 @@ const navMenu = document.querySelector(".links");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
-    navMenu.classList.toggle("links");
+    navMenu.classList.toggle("show");
 })
 
 document.querySelectorAll(".links a").forEach(n => n.addEventListener("click", () => {
