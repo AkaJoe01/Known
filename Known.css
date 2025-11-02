@@ -836,17 +836,17 @@ body{
         margin-top: 7px;
     }
 
-    /* .hamburger.active .bar:nth-child(2){
+    .hamburger.active .bar:nth-child(2){
         opacity: 0;
-    } */
+    } 
 
-    /* .hamburger.active .bar:nth-child(1){
+    .hamburger.active .bar:nth-child(1){
         transform: translateY(8px) rotate(45deg);
     }
 
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-    } */
+    }
 
     .links{
         /* display: flex !important; */
@@ -857,26 +857,4 @@ body{
         /* flex-direction: column;  */
     }
 
-}
-
-@keyframes zoom {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.slider-image {
-  opacity: 1;
-  transition: opacity 1s ease-in-out;
-  animation: zoom 7s infinite;
-}
-
-.slider-image.fade-out {
-  opacity: 0;
 }
