@@ -118,11 +118,13 @@ body{
 }
 
 .efficient{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     /* width: 600px; */       /********** DYNAMIC ***********/
     margin-top: -600px;
     margin-left: 70px;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    z-index: 1;
 }
 
 .first_paragraph{
