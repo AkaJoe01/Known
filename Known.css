@@ -20,12 +20,6 @@ body{
     z-index: 1000;
 }
 
-/* .nav-menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-} */
 
 .hamburger{
     display: none;
@@ -102,12 +96,6 @@ body{
     font-weight: 100;
     position: relative;
     left: 1%;
-    /* display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px; */
-    /* display: flex; */
-    /* align-items: center; */
 }
 
 .lower img{
@@ -166,7 +154,6 @@ body{
 .three .one_three{
     border: 2px solid whitesmoke;
     margin-top: 90px;  /************ DYNAMIC **************/
-    /* margin-left: 100px; */
     justify-content: center;
     align-items: center;
     width: 300px;
@@ -324,9 +311,11 @@ body{
     background-color: #252020;
 }
 
+
 .form .email:focus{
     outline: none;
 }
+
 
 .form .password{
     border: 1px none #252020;
@@ -336,6 +325,7 @@ body{
     width: 250px;
     background-color: #252020;
 }
+
 
 .form .password:focus{
     outline: none;
@@ -375,11 +365,13 @@ body{
     margin-top: 40px;
 }
 
+
 .cert{
     font-size: 20px;
     font-weight: 500;
     margin-top: 30px;
 }
+
 
 .free{
     font-size: 20px;
@@ -401,7 +393,7 @@ body{
 }
 
 /* Instructor text styles */
-.teacher .instructor {
+.teacher .teach {
     text-align: center;
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -429,7 +421,10 @@ body{
     margin-top: -10px;
 }
 
+
 /* Individual card styling */
+
+
 .card {
     flex: 1 1 200px; 
     overflow: hidden;
@@ -447,7 +442,6 @@ body{
 .card-content {
     padding: 20px;
     line-height: 15px;
-    /* text-align: center; Crucial for centering h3 and p tags */
 }
 
 .card-content h3 {
@@ -625,16 +619,316 @@ body{
 .trainers i, .cert i, .free i {
     margin-right: 10px;
     color: #29CA8E;
-    /* margin-top: 20px; */
-    /* width: 30%; */
-    /* background-color: #29CA8E; */
+}
+/************ END OF THE FIRST IMAGE ***************/
+
+
+
+
+
+/*********************** POPULAR COURSE *******************/
+
+.popular_courses{
+    border: 1px solid none;
+    margin-top: 70px;
+    margin-left: 65px;
+    width: 90%;
 }
 
-/* .trainers .cert .free p{
-    margin-left: 20px;
-} */
 
-/************ END OF THE FIRST IMAGE ***************/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.skills{
+    text-align: center;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 1px;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+}
+
+
+.courses{
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 25px;
+  padding: 20px 10px;
+  scrollbar-width: none;
+}
+
+.courses::-webkit-scrollbar {
+  display: none;
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 340px;
+  flex: 0 0 auto;
+}
+
+
+.course-image {
+  position: relative;
+}
+
+.course-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.course-meta {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.course-content {
+  padding: 15px;
+}
+
+.course-content h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.course-content:hover{
+    color: #29CA8E;
+    cursor: pointer;
+}
+
+.course-content p {
+  font-size: 14px;
+  color: #666;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #eee;
+  padding: 12px 15px;
+}
+
+.instructor {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.instructor img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.price {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 5px 10px;
+}
+
+.price.free {
+  background: #4e5eff;
+  color: #fff;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.price.paid {
+  background: #17c964;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Scroll buttons at bottom */
+.scroll-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.scroll-btn {
+  background: #fff;
+  border: none;
+  /* box-shadow: 0 2px 8px rgba(0,0,0,0.2); */
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  /* border-radius: 50%; */
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background: whitesmoke;
+  color: #fff;
+}
+
+
+
+/* REVIEW SECTION */
+
+.review_section{
+    border: 1px solid black;
+    background-color: #fafafa;
+    margin-top: 50px;
+    padding: 100px;
+    width: 100%;
+    /* height: 100vh; */
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #fafafa;
+  color: #333;
+}
+
+.reviews-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+  /* margin-bottom: 5px; */
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  /* padding: 20px; */
+  /* margin-bottom: 70px; */
+  scrollbar-width: none;
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); */
+  text-align: left;
+  /* transition: transform 0.3s ease; */
+}
+
+.review-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.review-card h3 {
+  margin: 0;
+  display: flex;
+  flex-direction: row; 
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.role {
+  color: #888;
+  margin-bottom: 15px;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.stars {
+  color: #007bff;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.review-btn {
+  background: #869791;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+  font-size: 4px;
+  cursor: pointer;
+  /* transition: background 0.3s; */
+}
+
+.review-btn:hover {
+  background: #fafafa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -650,31 +944,21 @@ body{
 
 
     .nav-container{ 
-        /* align-items: center; */
-        /* justify-content: center;  */
-        /* display: flex;
-        flex-direction: row; */
         position: sticky;
         top: 0;
         overflow: visible;      /*********** MADE CHANGES FROM HIDDEN TO VISIBLE ***********/
     }   
 
+
     .nav-container .links {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
-        padding: 0;
-        margin: 0;
-        display: none;
     }
 
-    .nav-container .links a{
-        margin-right: 20px;
-        /* display: flex; */
-    }
 
     .nav-container .links.show{
-        display: flex;
+        display: block;
     }
     
     .teacher .imageCard-container{
@@ -696,24 +980,71 @@ body{
     }
 
     .links{
-        display: none;
+        display: flex;
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #29CA8E;
-        /* text-align: center; */
-        /* padding: 10px 0; */
-        /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); */
+        background-color: white;
+        text-align: center; 
     }
 
-    .links a{
-        display: block;
+    .links:hover{
+        color: #29CA8E;
+    }
+
+    /* WHERE I MADE CHANGES */
+
+.links a{
+  display: block;
+  padding: 10px 20px;
+}
+
+.links a:hover {
+  color: white;
+  border: 1px solid none;
+  width: 100%;
+}
+
+.links a::after {
+  content: '';
+  display: block;
+  height: 2px;
+  color: white;
+  width: 0;
+}
+
+
+.links a:hover::after {
+  width: 100%;
+} 
+
+.links a::after {
+  height: 4px; 
+
+}
+
+.links a:hover::after {
+  width: 120%; 
+  margin-left: -10%; 
+}
+
+
+    /* WHERE THE CHANGES ENDS */
+
+    .links a:hover{
+        background-color: #29CA8E;
     }
 
     .links .active{
         display: block;
+        width: 100%;
     }
+
+    .review-card {
+    flex: 0 0 85%;
+  }
+
 
 
     
@@ -727,14 +1058,11 @@ body{
     }
 
       .known{
-            /* margin-left: 30px; */
-            /* margin-right: 50px; */
             position: absolute;
             bottom: 10%;
             right: 110%;
             font-weight: 700;
             color: #454545;
-            /* margin-top: 20px; */
         }
 
     .contact-info{
@@ -769,7 +1097,7 @@ body{
         border: 1px solid none;
         height: 45vh;
         width: 365px;
-        margin-left: 4px;
+        margin-left: 16px;
         padding: 10px;
         border-radius: 0%;
         margin-top: 10px;
@@ -792,7 +1120,6 @@ body{
 
     .first_paragraph{
         font-weight: 800;
-        /* margin-top: 90px; */
         font-size: 20px;
         color: #FFFFFF;
     }
@@ -800,7 +1127,6 @@ body{
     .second_paragraph{
         color: #FFFFFF;
         font-size: 11px;
-        /* margin-top: -15px; */
     }
 
     .lower img{
@@ -822,7 +1148,6 @@ body{
     .teacher .imageCard-container{
         display: flex;
         flex-wrap: wrap;
-        /* margin-top: 20px; */
     }
 
         .hamburger{
@@ -831,7 +1156,7 @@ body{
         margin-top: 7px;
     }
 
-    .hamburger.active .bar:nth-child(2){
+    /* .hamburger.active .bar:nth-child(2){
         opacity: 0;
     }
 
@@ -841,15 +1166,27 @@ body{
 
     .hamburger.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
-    }
+    } */
 
     .links{
-        /* display: flex !important; */
         justify-content: space-between;
-        /* align-items: center; */
-        gap: 30px;
+        align-items: center; 
         display: block;
-        /* flex-direction: column;  */
     }
+
+    /* COURSES */
+
+    .popular_courses{
+    border: 1px solid none;
+    margin-top: 100px;
+    margin-left: 25px;
+    width: 90%;
+}
+
+.popular_courses h2{
+    text-align: center;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 }
