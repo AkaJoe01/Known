@@ -20,6 +20,7 @@ document.querySelectorAll(".links a").forEach(n => n.addEventListener("click", (
     navMenu.classList.remove("active");
 }))
 
+<<<<<<< HEAD
 // SCROLLABLE CARD BUTTON 
 
 const courseList = document.getElementById('course-list');
@@ -263,3 +264,23 @@ scrollRight.addEventListener('mouseleave', () => {
 // scrollRight.addEventListener('click', () => {
 //     courseList.scrollBy({ left: 300, behavior: 'smooth' });
 //     });
+=======
+const sliderImage = document.getElementById("slider-image");
+const images = [
+  "Images/slider-image1.jpg",
+  "Images/slider-image2.jpg",
+  "Images/slider-image3.jpg",
+];
+let currentImageIndex = 0;
+
+function changeImage() {
+  sliderImage.classList.add("fade-out");
+  setTimeout(() => {
+    sliderImage.src = images[currentImageIndex];
+    currentImageIndex = (currentImageIndex + 1) % images.length;
+    sliderImage.classList.remove("fade-out");
+  }, 1000);
+}
+
+setInterval(changeImage, 7000);
+>>>>>>> 744883cfcc73ae0f0e7c7256c67de2eb1333a5e4
