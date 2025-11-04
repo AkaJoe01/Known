@@ -1272,7 +1272,7 @@ footer {
 
 .reviews-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
@@ -1302,7 +1302,7 @@ footer {
 .review-card h3 {
   margin: 0;
   display: flex;
-  flex-direction: column; 
+  flex-direction: row; 
   font-size: 1.2rem;
   font-weight: 600;
 }
