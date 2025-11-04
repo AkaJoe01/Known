@@ -389,6 +389,7 @@ body{
                                     /******************* BEGINNING OF THE TEACHER SECTION ***********************/
 
 /* Base container styling */
+
 .teacher {
     border: 1px solid #f3f3f3;
     background-color: #f9f9f9;
@@ -622,6 +623,8 @@ body{
     margin-right: 10px;
     color: #29CA8E;
 }
+
+
 /************ END OF THE FIRST IMAGE ***************/
 
 
@@ -764,6 +767,7 @@ body{
 }
 
 /* Scroll buttons at bottom */
+
 .scroll-buttons {
   margin-top: 20px;
   display: flex;
@@ -774,11 +778,9 @@ body{
 .scroll-btn {
   background: #fff;
   border: none;
-  /* box-shadow: 0 2px 8px rgba(0,0,0,0.2); */
   cursor: pointer;
   width: 20px;
   height: 20px;
-  /* border-radius: 50%; */
   font-size: 12px;
   transition: all 0.3s ease;
 }
@@ -793,19 +795,19 @@ body{
 /* REVIEW SECTION */
 
 .review_section{
-    border: 1px solid black;
+   
+    border: 1px solid none;
     background-color: #fafafa;
     margin-top: 50px;
     padding: 100px;
     width: 100%;
-    /* height: 100vh; */
 }
 
-body {
+/* body {
   font-family: 'Poppins', sans-serif;
   background: #fafafa;
   color: #333;
-}
+} */
 
 .reviews-section {
   text-align: center;
@@ -814,7 +816,6 @@ body {
 
 .reviews-section h2 {
   font-size: 2rem;
-  /* margin-bottom: 5px; */
 }
 
 .subtitle {
@@ -827,8 +828,6 @@ body {
   gap: 20px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  /* padding: 20px; */
-  /* margin-bottom: 70px; */
   scrollbar-width: none;
 }
 
@@ -841,9 +840,7 @@ body {
   background: #fff;
   border-radius: 15px;
   padding: 25px;
-  /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); */
   text-align: left;
-  /* transition: transform 0.3s ease; */
 }
 
 .review-card img {
@@ -865,8 +862,6 @@ body {
 .role {
   color: #888;
   margin-bottom: 15px;
-  /* display: flex;
-  flex-direction: row; */
 }
 
 .text {
@@ -896,41 +891,203 @@ body {
   border-radius: 50%;
   font-size: 4px;
   cursor: pointer;
-  /* transition: background 0.3s; */
 }
 
 .review-btn:hover {
   background: #fafafa;
 }
 
+/* CONTACT US */
+
+/* * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    } */
 
 
+    .contact-container {
+      border: 1px solid black;
+      display: flex;
+      margin-top: 50px;
+      width: 100%;
+      /* max-width: 1100px; */
+      background-color: #3e4ec2;
+      color: white;
+      overflow: hidden;
+    }
+
+    .contact-form {
+      flex: 1;
+      padding: 60px 40px;
+    }
+
+    .contact-form h2 {
+      font-size: 28px;
+      margin-bottom: 10px;
+      margin-left: 47px;
+    }
+
+    .contact-form p {
+      font-size: 15px;
+      color: #e0e0e0;
+      margin-bottom: 30px;
+      margin-left: 47px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 90%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      outline: none;
+      margin-left: 47px;
+    }
+
+    .contact-form textarea {
+      height: 100px;
+      resize: none;
+    }
+
+    .contact-form button {
+      background-color: whitesmoke;
+      color: black;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: 0.3s;
+      margin-left: 47px;
+    }
+
+    .contact-form button:hover {
+      background-color: #3f51b5;
+      color: white;
+    }
+
+    .contact-image {
+      flex: 1;
+    }
+
+    .contact-image img {
+      width: 80%;
+      height: 80%;
+      margin-top: 50px;
+      margin-left: 20px;
+      object-fit: cover;
+    }
 
 
+    /* FOOTER */
 
 
+footer {
+      background-color: #211d1d;
+      color: #fff;
+      padding: 60px 10%;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+
+    .footer-col {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .footer-col h3 {
+      font-size: 15px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      color: #bcbcbc;
+      font-size: 12px;
+      text-decoration: none;
+      line-height: 1.8;
+    }
+
+    .footer-col a:hover {
+      color: #00d084;
+    }
+
+    .social-icons {
+      margin-top: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin-right: 10px;
+      font-size: 15px;
+      color: #00d084;
+      text-decoration: none;
+      /* transition: 0.3s; */
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+    }
+
+    .newsletter input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid #666;
+      background: transparent;
+      color: #fff;
+      margin-bottom: 20px;
+      outline: none;
+    }
+
+    .newsletter button {
+      background: transparent;
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 30px;
+      border-radius: 50px;
+      cursor: pointer;
+      /* transition: 0.3s; */
+    }
+
+    .newsletter button:hover {
+      background: #00d084;
+      color: #000;
+      border-color: #00d084;
+    }
+
+    .newsletter small {
+      display: block;
+      margin-top: 10px;
+      font-size: 10px;
+      color: #888;
+    }
+
+    .footer-bottom {
+      text-align: left;
+      margin-top: 40px;
+      border-top: 1px solid #333;
+      padding-top: 20px;
+      color: #bcbcbc;
+      font-size: 14px;
+    }
+
+    .footer-bottom p {
+      margin-bottom: 5px;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    /* END OF FOOTER */
 
 
 
@@ -1047,6 +1204,157 @@ body {
     flex: 0 0 85%;
   }
 
+  body {
+        height: auto;
+      }
+      .contact-container {
+        flex-direction: column;
+      }
+      .contact-form, .contact-image {
+        width: 110%;
+        /* margin-left: 25px; */
+      }
+      .contact-form {
+        padding: 40px 25px;
+      }
+
+      .contact-form p {
+        margin-left: 2px;
+      }
+
+      .contact-form h2 {
+        margin-left: 2px;
+      }
+
+      .contact-form input, .contact-form textarea {
+        margin-left: 2px;
+        /* height: 50%; */
+      }
+
+      .contact-form button {
+        margin-left: -10px;
+        width: 95%;
+      }
+
+      .contact-form img {
+        margin-bottom: -50px;
+        height: 100%;
+      }
+
+      /* FOR FOOTER */
+
+     footer {
+        padding: 40px 20px;
+      }
+
+      .footer-container {
+        flex-direction: column;
+      }
+
+      /* END OF FOOTER */
+
+      
+      /* BEGINNING OF REVIEW */
+
+    .review_section{
+    border: 1px solid black;
+    background-color: #fafafa;
+    margin-top: 50px;
+    padding: 100px;
+    width: 100%;
+}
+
+.reviews-section {
+  text-align: center;
+  padding: 20px;
+}
+
+.reviews-section h2 {
+  font-size: 2rem;
+}
+
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.reviews-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.reviews-container::-webkit-scrollbar {
+  display: none;
+}
+
+.review-card {
+  flex: 0 0 300px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+}
+
+.review-card img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.review-card h3 {
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.role {
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.text {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+.stars {
+  color: #007bff;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.review-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.review-btn {
+  background: #869791;
+  border: none;
+  color: white;
+  padding: 5px 8px;
+  border-radius: 50%;
+  font-size: 4px;
+  cursor: pointer;
+}
+
+.review-btn:hover {
+  background: #fafafa;
+}
+
+
+/* END OF REVIEW */
 
 
     
@@ -1099,7 +1407,7 @@ body {
         border: 1px solid none;
         height: 45vh;
         width: 365px;
-        margin-left: 16px;
+        margin-left: 5px;
         padding: 10px;
         border-radius: 0%;
         margin-top: 10px;
