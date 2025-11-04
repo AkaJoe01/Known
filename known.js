@@ -51,14 +51,15 @@ function createScroller(scrollerId, leftId, rightId, scrollAmount) {
 
     // --- Button Controls ---
     if (scrollLeft && scrollRight) {
-      scrollLeft.addEventListener('click', scrollPrev);
-      scrollRight.addEventListener('click', scrollNext);
+        if (window.innerWidth > 768) {
+            scrollLeft.addEventListener('click', scrollPrev);
+            scrollRight.addEventListener('click', scrollNext);
+        }
     }
 
 
     // --- Enable Auto Scroll only on Desktop ---
     function enableAutoScroll() {
-      if (window.innerWidth > 768) { // desktop only
         autoScroll = setInterval(scrollNext, autoScrollDelay);
 
         // Pause auto-scroll on hover or interaction
@@ -70,7 +71,6 @@ function createScroller(scrollerId, leftId, rightId, scrollAmount) {
             });
           }
         });
-      }
     }
 
     // --- Disable Auto Scroll for Mobile ---
@@ -79,20 +79,7 @@ function createScroller(scrollerId, leftId, rightId, scrollAmount) {
     }
 
     // --- Initialize ---
-    if (window.innerWidth > 768) {
-      enableAutoScroll();
-    } else {
-      disableAutoScroll();
-    }
-
-    // --- Handle Resize (Responsive Switch) ---
-    window.addEventListener('resize', () => {
-      if (window.innerWidth > 768) {
-        enableAutoScroll();
-      } else {
-        disableAutoScroll();
-      }
-    });
+    enableAutoScroll();
   }
 }
 
