@@ -794,20 +794,19 @@ body{
 
 /* REVIEW SECTION */
 
+
 .review_section{
    
     border: 1px solid none;
     background-color: #fafafa;
     margin-top: 50px;
-    padding: 100px;
-    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6%;
+    width: 85%;
 }
 
-/* body {
-  font-family: 'Poppins', sans-serif;
-  background: #fafafa;
-  color: #333;
-} */
 
 .reviews-section {
   text-align: center;
@@ -854,7 +853,7 @@ body{
 .review-card h3 {
   margin: 0;
   display: flex;
-  flex-direction: row; 
+  /* flex-direction: row;  */
   font-size: 1.2rem;
   font-weight: 600;
 }
