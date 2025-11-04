@@ -1251,12 +1251,13 @@ footer {
     border: 1px solid none;
     background-color: #fafafa;
     margin-top: 50px;
-    max-width: 100%;
+    margin-left: -6px ;
+    width: 100%;
 }
 
 .reviews-section {
   text-align: center;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .reviews-section h2 {
