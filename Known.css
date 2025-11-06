@@ -102,6 +102,7 @@ body{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    /* align-items: center; */
 
 }
 
@@ -1223,8 +1224,8 @@ footer {
       }
 
       .contact-form button {
-        margin-left: -10px;
-        width: 95%;
+        margin-left: -5px;
+        width: 92%;
       }
 
       .contact-form img {
@@ -1396,7 +1397,7 @@ footer {
 
     .form{
         border: 1px solid none;
-        height: 45vh;
+        height: 47vh;
         width: 365px;
         margin-left: 5px;
         padding: 10px;
