@@ -8,7 +8,7 @@ hamburger.addEventListener("click", () => {
 
 document.querySelectorAll(".links a").forEach(n => n.addEventListener("click", () => {
     hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
+    navMenu.classList.remove("show");
 }))
 
 function createScroller(scrollerId, leftId, rightId, scrollAmount) {
